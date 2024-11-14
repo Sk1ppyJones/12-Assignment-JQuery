@@ -15,25 +15,31 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- JQuery -->
-     <link rel="stylesheet" href="JQuery.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer>
+    </script>
+
+    <script src="jquery.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div class = "container-fluid">
-            <div class="card card-grid">
+        <div class="container-fluid">
+            <div class="card card-grid m-2 rounded-9">
                 <img src="img/ferry.JPG" class="card-img-top img-fluid p-1" alt="">
                 <div class="card-header">
                     <h2>Casey Jones</h2>
                     <h4>--Computer Science</h4>
-                    <div class="partial-text">
+                    <div class="partial-text" id="partial-text">
                         <p>
-                            "I think there are people that help you become the person you end up being, and you can be grateful for them, even if they were never meant to be in your life forever...
+                            "I think there are people that help you become the person you end up being, and you can be
+                            grateful for them, even if they were never meant to be in your life forever...
                         </p>
                     </div>
-                    <div class="full-text">
+                    <div class="full-text" id="full-text">
                         <p>
-                            "I think there are people that help you become the person you end up being, and you can be grateful for them, even if they were never meant to be in your life forever. I'm glad I knew you too"
+                            "I think there are people that help you become the person you end up being, and you can be
+                            grateful for them, even if they were never meant to be in your life forever. I'm glad I knew
+                            you too"
                         </p>
                         <p>
                             --Diane Nguyen, "Bojack Horseman, S6 E16"
@@ -48,14 +54,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="button">
+                <div class="button" id="show-button">
                     <button id="showmore">Show More...</button>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>Casey Jones, Assignment 12</p>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">&copy; Casey Jones, Assignment 12</span>
+                </div>
+            </footer>
+        </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

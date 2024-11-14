@@ -1,38 +1,36 @@
-.container-fluid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 3em 1fr;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.card-grid {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    max-width: 40em;
-    margin: auto;
-}
-
 body {
     background-color: rgb(198, 233, 198);
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(160, 184, 160);
-    text-align: center;
-    padding-top: 0.3em;
-}
-
-.full-text{
+.full-text {
     display: none;
+    border: 0.2em solid rgb(198, 233, 198);
+    padding: 0.5em;
+    border-radius: 1em;
 }
 
-button{
+button {
     margin: 1em;
     background-color: rgb(198, 233, 198);
+}
+
+@media screen and (min-width: 550px) {
+
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3em 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .card-grid {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        max-width: 40em;
+        margin: auto;
+        box-shadow: 0em 0em 2em rgb(103, 117, 103);
+    }
+
 }
