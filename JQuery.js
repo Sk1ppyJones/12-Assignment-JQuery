@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $.getJSON("/data.json", function (data) {
-        console.log(data);
-        $("#text").html(data["text"]);
-    });
-
     $("#show-button").click(function () {
         $("#partial-text").toggle("slow");
         $("#full-text").slideToggle("slow");
